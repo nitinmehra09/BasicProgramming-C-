@@ -6,20 +6,16 @@ void main(){
 	printf("Enter a number b/w 1 to 100 : ");
 	scanf("%d",&n);
 	
-	for (i=0; i<10; i++){
-		
-		if(a[i]==n)
-		{
+	for(i=0; i<10; i++){
+		if(a[i]==n){
 			f=1;
 			break;
 		}
 	}
-		if (f==1)
-		{
-			printf("%d is in given array at %d position",n,i);
-		}
-		else
-		{
-			printf("%d is not in given array ",n);
-		}
+	if(f==1){
+		printf("%d is in given array at %d position",n,i);
+	}
+	else{
+		printf("%d is not in given array ",n);
+	}
 }
